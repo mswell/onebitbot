@@ -7,6 +7,12 @@ class InterpretService
         FaqModule::CreateService.new(params).call()
       when "remove"
         FaqModule::RemoveService.new(params).call()
+      when "ls", "link_search", "find_link_hashtag"
+        LinkModule::ListService.new(params, action).call()
+      when "ad"
+        LinkModule::CreateService.new(params).call()
+      when "rm"
+        LinkModule::RemoveService.new(params).call()
       when "help"
         HelpService.call()
       else
