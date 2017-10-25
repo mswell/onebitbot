@@ -17,10 +17,10 @@ class HelpService
       response += ">Adiciona link ao banco de dados\n\n"
       response += "*Listar links*\n"
       response += ">Lista os links armazenados\n\n"
-      response += "*Remova link ID*\n"
+      response += "*Remova o link ID*\n"
       response += ">Remove um link baseado no ID\n\n"
       response += "*Você tem link sobre X*\n"
-      response += ">Pesquisa por palavra nos llinks\n\n"
+      response += ">Pesquisa por palavra nos links\n\n"
       response += "*Link hashtag X*\n"
       response += ">Lista as perguntas e respostas com aquela hashtag\n\n"
     end
